@@ -13,6 +13,7 @@ function App() {
 
   //   return latest;
   // }, 0);
+  console.log("s");
 
   return (
     <>
