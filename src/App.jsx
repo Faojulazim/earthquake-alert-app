@@ -9,6 +9,8 @@ function App() {
     if (t <= currentTime && t > latest) {
       return t;
     }
+    console.log(t);
+
     return latest;
   }, 0);
 
