@@ -1,4 +1,4 @@
-import UseEarthquake from "./hooks/UseEarthquake";
+import useEarthquake from "./hooks/UseEarthquake";
 
 function App() {
   const earthquake = UseEarthquake();

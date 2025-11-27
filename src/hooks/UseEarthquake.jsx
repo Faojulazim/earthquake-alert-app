@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function UseEarthquake() {
+function useEarthquake() {
   const [data, setData] = useState([]);
   useEffect(() => {
     async function run() {
@@ -16,4 +16,4 @@ function UseEarthquake() {
   return data;
 }
 
-export default UseEarthquake;
+export default useEarthquake;
