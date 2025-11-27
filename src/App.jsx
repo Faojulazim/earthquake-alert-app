@@ -1,18 +1,18 @@
-import useEarthquake from "./hooks/useEarthquake";
+// import useEarthquake from "./hooks/useEarthquake";
 
 function App() {
-  const earthquake = useEarthquake();
-  const times = earthquake.map((eq) => eq.properties?.time);
-  const currentTime = Date.now();
+  // const earthquake = useEarthquake();
+  // const times = earthquake.map((eq) => eq.properties?.time);
+  // const currentTime = Date.now();
 
-  const mostRecent = times.reduce((latest, t) => {
-    if (t <= currentTime && t > latest) {
-      return t;
-    }
-    console.log(t);
+  // const mostRecent = times.reduce((latest, t) => {
+  //   if (t <= currentTime && t > latest) {
+  //     return t;
+  //   }
+  //   console.log(t);
 
-    return latest;
-  }, 0);
+  //   return latest;
+  // }, 0);
 
   return (
     <>
@@ -21,7 +21,7 @@ function App() {
           <h1 className="text-xl tracking-wide">Earthquake-DB</h1>
           <p className="text-black/50">Powered By USGS&copy;</p>
         </div>
-        <div className="flex flex-col w-full gap-y-4 mt-20">
+        {/* <div className="flex flex-col w-full gap-y-4 mt-20">
           {earthquake.map((quakes, index) => {
             return (
               <div
@@ -129,7 +129,7 @@ function App() {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </>
   );
